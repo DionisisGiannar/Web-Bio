@@ -1,0 +1,50 @@
+.sidebar {
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #222;
+    height: auto;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sidebar :hover{
+    background-color: #111;
+    color: white;
+  }
+
+  .sidebar a:not(.visible){
+    display: none;
+  }
+  
+  a.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+
+  .main-article {
+    min-width: 715px;
+  }
+  
+ 
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: auto;
+      width: auto;
+    }
+  }

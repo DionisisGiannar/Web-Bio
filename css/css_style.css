@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3{
+  font-size: 32px;
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+h2{
+  font-size: 28px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #eee;
+  background: #121212;
+  font: 100%;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.75;
+}
+blockquote{
+  padding: 12px 24px;
+  margin: 0 0 24px;
+  font-size: 17.5px;
+  border-left: 5px solid
+}
+.float{
+  float: right;
+  border: 1px #333;
+  margin-right: 10px;
+  margin-bottom: 5px;
+
+
+}
+/* Style the header */
+.header{
+  border-radius: 15px;
+    grid-area: header;
+    background-color: #222;
+    text-align: center;
+    font-size: 25px;
+    font-family: inherit;
+    height: auto;
+}
+.header h2{
+  font-size: 35px;
+}
+
+th {
+  text-align: center;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  border: 4px white;
+  grid-template-areas: 
+    'header header header header header header header' 
+    'nav nav nav nav nav nav nav'
+    'aside main main main main main main' 
+    'footer footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.nav, .aside, .main{
+    border: 1px solid #222;
+    padding: 4px;
+}
+.main{
+  height: 10000px;
+}
+.aside, .main{
+  padding: 10px;
+  height: auto; /* TODO: must be replaced to */
+}
+
+.nav{
+    grid-area: nav;
+    /*box-shadow: 0px 3px 3px #222;*/
+    padding: 10px;
+}
+
+/* Style the aside column */
+.aside {
+  grid-area: aside;
+  width: auto;
+  max-width: 200px;
+}
+
+/* Style the main column */
+.main {
+  grid-area: main;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #222;
+  text-align: center;
+}
+a:visited{
+  color: #04AA6D;
+}
+a:link{
+  color: #04AA6D;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header' 
+      'nav'
+      'aside'
+      'main '      
+      'footer';
+  }
+  .aside {
+    height:auto;
+  }
+}

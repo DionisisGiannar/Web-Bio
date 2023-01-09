@@ -71,9 +71,7 @@ th {
     border: 1px solid #222;
     padding: 4px;
 }
-.main{
-  height: 10000px;
-}
+
 .aside, .main{
   padding: 10px;
   height: auto; /* TODO: must be replaced to */
@@ -119,8 +117,5 @@ a:link{
       'aside'
       'main '      
       'footer';
-  }
-  .aside {
-    height:auto;
   }
 }

@@ -29,10 +29,9 @@ ul.topnav li.right {
   width: 10%;
 }
   
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   ul.topnav li.right, 
   ul.topnav li {float: inline-start;}
-  ul.topnav li {width: auto;}
   ul.topnav li {width: auto;}
   ul.topnav li.right {width: auto;}
 }

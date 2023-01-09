@@ -34,11 +34,6 @@
     padding: 1px 16px;
     height: 1000px;
   }
-
-  .main-article {
-    min-width: 715px;
-  }
-  
  
   
   @media screen and (max-width: 400px) {
